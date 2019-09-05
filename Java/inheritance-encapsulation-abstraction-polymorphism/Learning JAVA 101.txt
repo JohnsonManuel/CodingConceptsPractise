@@ -1,0 +1,140 @@
+learning from : https://www.youtube.com/watch?v=7GwptabrYyk
+
+Object oriented programming
+
+It is a methodology
+
+1)Objects 
+
+A real world entity - anything you can see touch and fell are objects 
+
+ex: class DOG
+
+2)Class
+
+It is a description or a blueprint of an object 
+
+ex: properties - breed ,age,size,color
+     Behaviour - eat() sleep() run() bark()
+
+**Different objects will have different values but the same properties
+
+
+				oop vs pop
+
+Bottom up approach  				  top down approach
+
+divided into objects    				  divided into functions
+
+has access modifiers  (default ,private,public)	 	   dont have access modifiers
+
+objects can move & communicate with other objects   	    Data can move freely from functions to functions in the system
+
+mor secure 					   less secure  (because of acces modifiers)
+
+supports overloading 			                 doesnt support overloading
+
+
+
+OOPS CONCEPTS 
+
+1)Inheritance - The properites of an object to acquiure all the properties of the parent object
+
+   Inheritance represents a IS-A relationship which is also known as a parent-child relationship
+
+			SUPER CLASS - ANIMAL
+
+SUB CLASS- Mammals	 SUB CLASS - Reptiles  	SUB CLASS - Birds
+
+class Subclass extends Superclass{
+//methods and fields
+}
+
+Advantages -  Code Resusability
+	       Exensibility
+	       Overriding
+	       Data Hiding
+
+Types of inheritance
+
+1) single  - one parent and one child
+
+2) Multilevel - one parent one child one grandchild
+
+3) Heirarchial - one parent multiple child 
+
+4) multiple  - multiple parent one child isint supported in java
+
+beacuse no pointer technique and virtual keyword
+
+
+2)Encapsulation
+
+Encapsulation is the mechanism if wrapping up of data and code acting on the methods together as a single unit.
+
+It is achieved by declaring the variables of a class as private and then providing the public setters and public getters to modify the variable values.
+
+
+3)Polymorphism
+
+Polymorphism is the property if an object  which allows it to take multiple forms.
+
+types of polymorphism
+
+1) compile time polymorphism -  Also known as static polymorphism is resolved during compile time
+
+overloading is an example of compile time polymorphism
+
+Rules of overloading 
+1. overaloaded methods shoould have different argument list
+2. it can have different return type if argument list is different.
+3. It can throw different exceptions
+4. It can have different access modifiers.
+
+
+2) Run time polymorphism - Also known as dynamic polymorphism is resolved during run time
+
+Method overriding is an example 
+
+Rules of overriding
+1.Overriding method argument list must match the overridden method
+2. The return type must be the same
+3.Access level cannot be more restrictive than overridden method
+
+
+4)Abstraction
+
+It is a type of run time polymorphism
+
+Abstraction is a methodology where hiding the implementation details from the user and only providing the functionality
+
+Ways to achieve abstraction 
+
+1)Abstract class- it is a template definition to methods and variables of a class that contains one or more abstracted methods
+
+rules:
+1.Must be declared with the abstract keyword 
+2. can have abstract and non-abstract methods 
+3. Cannot be instantiated
+4. can have constructors and static methods
+5. Can have final methods
+ 
+2) Interface - An interface is a blueprint for a class which contains static constants and abstract methods
+
+ It enables Multiple Inheritance and hhelps in achieving loose coupling
+
+	It porvides 100% of abstraction
+
+CLASS 		Interface  	Interface 
+
+extends 		implemets 	extends 
+
+CLASS		CLASS		interface
+
+
+
+
+
+
+
+
