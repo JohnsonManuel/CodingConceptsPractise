@@ -1,0 +1,100 @@
+https://www.youtube.com/watch?v=Ma7u6KEKzPE
+Java Collection framework::
+
+COllection are containers that group multiple items in a single unit
+
+It is an architecture to store and manipulate a group of objects
+
+Using java collevtions various operations on the data like searching , sorting ,insertion, deletion etc
+
+Java Collection framework provides many interfaces and classes.
+
+COllection Framework Heirarchy
+Iterable
+Collection
+LIst 		Queue 		Set
+Arraylst	Deque		Hash set
+linked list 	ArrayDeque	Linked HashSet
+vector				Sorted set
+Statck				Tree set
+--------------------------------------
+Interfaces
+
+Interfaces are the reference types which are similar to classes but contains only abstract methods
+
+Iterator - The iterator interface provides the facility of iterating the elements only in a forward direction.
+methods- hasNext() next() remove()
+
+Iterable - The Iterable is a root interface for all the collection classes. The collection interface along with all its subclasses also implement the iterable interface.
+methods - Iterator<T> iterator()
+
+Collection - COllection interface is implemented by all the collection framework & decalre the methods that every collection will contain.
+methods - Boolean add(Object obj).
+
+---------------------------------------
+List 
+List in an interface
+list extends the COllection framework and stores elements in an indexed approach can contain duplicate values
+
+List Types
+ArrayList  - Array list is the implementation of List interface when the elements can be dynamically added or removed from list
+methods - 
+add(Collection c), 
+add(int index, Object element),
+Object[] toArray(), 
+void clear(),
+Object clone,
+int lastIndexof(Object 0),
+void trimToSize().
+
+
+ 
+Linked LIst - Linked list is a sequence of links which contains items
+Each link contains a connection to another item
+
+types: 
+Singly linked list
+
+Each node in this list stores a data of the node and a reference to the next node in the list.
+Doubly linked list 
+
+DOubly linked list has two references one to the next node and one to the previous node
+
+methods- add(),indexOf(),addFirst(),size(),remove(),remove(Object o)
+
+
+Vector 
+A synchronized thread safe version of arraylist.
+Vector object = neew Vector(size,increment);
+---------------------------------------
+Queue
+
+Queue is supposed to work as a FIFO approach .
+Queue<Integer> = new LinkedList<>();
+methods : add(),remove(),element(),peek(),poll(),offer().
+---------------------------------------
+Set
+
+A set refers to a collection that cannot contain duplicate elements
+
+It is maninly to model mathematical set abstraction
+
+Set uses hashing techniques to store unique elements
+
+Set classes :
+HashSet
+Java Hashset class creates a collection that use a hash table for storage 
+Hashset only contain unique elements and it inherits the Abstract class and implements Set interface.
+Uses Hashing mechanism that has a has method that creates an unique hash code for each element
+
+Methods of Hash Set : add(),remove(),clone(),isEmpty(),contains(),size(),iterator(),clear().
+
+LinkedHashSet
+
+It is a Hasg table and linked list implementation of the set of interface.
+LinkedHashSet<String> al = new LinkedHashSet(); 
+
+TreeSet
+It is a sorted version of the set
+The objects in tree set are sorted in ascending order
+TreeSet<String> al = new TreeSet<String>();
